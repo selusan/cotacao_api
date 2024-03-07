@@ -3,7 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def produto():
+def hello_world():
     return f'Hello world !'
 
 @app.route('/nome/<ola_nome>')
