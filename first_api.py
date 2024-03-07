@@ -2,11 +2,11 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.get('/')
+@app.route('/')
 def produto():
     return f'Hello world !'
 
-@app.get('/nome/<ola_nome>')
+@app.route('/nome/<ola_nome>')
 def saudacao(ola_nome):
     return f'Olá {ola_nome}'
 
