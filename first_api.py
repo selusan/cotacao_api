@@ -1,5 +1,5 @@
 from flask import Flask
-import app
+from app import *
 
 app = Flask(__name__)
 
